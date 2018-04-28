@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind
-    if self.valid? == false
+    if valid? == false
       begin
         raise TriangleError
       rescue TriangleError => error
