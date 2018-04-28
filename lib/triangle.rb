@@ -10,6 +10,13 @@ class Triangle
 
   def kind
 
+    if self.valid = false
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+          puts error.message
+      end
+
   end
 
 end
