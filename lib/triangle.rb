@@ -10,7 +10,7 @@ class Triangle
 
   def kind
     # if valid? == false
-    if (@s1 != 0 && @s2 != 0 && @s3 != 0) && ((@s1+@s2>@s3) && (@s2+@s3>@s1) && (@s3+@s1>@s2)) == false
+    if (@s1 != 0 && @s2 != 0 && @s3 != 0) && ((@s1+@s2>@s3) && (@s2+@s3>@s1) && (@s3+@s1>@s2)) == false || (@s1+@s2+@s3 == 0)
       begin
         raise TriangleError
       # rescue TriangleError => error
