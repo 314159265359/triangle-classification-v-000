@@ -9,8 +9,8 @@ class Triangle
   end
 
   def kind
-    # if valid? == false
-    if (@s1 != 0 && @s2 != 0 && @s3 != 0) && ((@s1+@s2>@s3) && (@s2+@s3>@s1) && (@s3+@s1>@s2)) == false || (@s1+@s2+@s3 == 0)
+    if self.valid? == false
+    # if (@s1 != 0 && @s2 != 0 && @s3 != 0) && ((@s1+@s2>@s3) && (@s2+@s3>@s1) && (@s3+@s1>@s2)) == false || (@s1+@s2+@s3 == 0)
       begin
         raise TriangleError
       end
@@ -27,8 +27,7 @@ class Triangle
   end
 
   def valid?
-    (@s1 != 0 && @s2 != 0 && @s3 != 0) && ((@s1+@s2>@s3) && (@s2+@s3>@s1) && (@s3+@s1>@s2))
-  end
+    (@s1 != 0 && @s2 != 0 && @s3 != 0) && ((@s1+@s2>@s3) && (@s2+@s3>@s1) && (@s3+@s1>@s2)) == false || (@s1+@s2+@s3 == 0)  end
 
   class TriangleError < StandardError
     puts "Not a valid triangle."
