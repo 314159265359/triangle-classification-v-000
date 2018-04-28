@@ -9,7 +9,6 @@ class Triangle
   end
 
   def kind
-
     if self.valid == false
       begin
         raise TriangleError
@@ -17,6 +16,9 @@ class Triangle
           puts error.message
       end
     end
+
+    # if @s1 == @s2 && @s2 == @s3
+      
 
   end
 
