@@ -1,3 +1,10 @@
 class Triangle
-  # write code here
+
+  attr_accessor
+
+  def 
+    
+    
+  end
+
 end
