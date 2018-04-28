@@ -24,8 +24,7 @@ class Triangle
     else
       :scalene
     end
-      
-
+    
   end
 
   def valid
