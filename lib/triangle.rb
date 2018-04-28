@@ -13,8 +13,6 @@ class Triangle
     if (@s1 != 0 && @s2 != 0 && @s3 != 0) && ((@s1+@s2>@s3) && (@s2+@s3>@s1) && (@s3+@s1>@s2)) == false || (@s1+@s2+@s3 == 0)
       begin
         raise TriangleError
-      # rescue TriangleError => error
-      #     puts error.message
       end
     end
 
@@ -33,7 +31,6 @@ class Triangle
   end
 
   class TriangleError < StandardError
-    # triangle error code
   end
 
 end
