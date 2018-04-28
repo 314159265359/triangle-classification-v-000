@@ -31,6 +31,7 @@ class Triangle
   end
 
   class TriangleError < StandardError
+    puts "Not a valid triangle."
   end
 
 end
