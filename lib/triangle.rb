@@ -21,6 +21,9 @@ class Triangle
       :equilateral
     elsif @s1 == @s2 || @s1 == @s3 || @s2 == @s3
       :isosceles
+    else
+      :scalene
+    end
       
 
   end
