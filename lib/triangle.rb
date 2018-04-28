@@ -17,7 +17,10 @@ class Triangle
       end
     end
 
-    # if @s1 == @s2 && @s2 == @s3
+    if @s1 == @s2 && @s2 == @s3
+      :equilateral
+    elsif @s1 == @s2 || @s1 == @s3 || @s2 == @s3
+      :isosceles
       
 
   end
