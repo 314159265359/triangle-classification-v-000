@@ -2,9 +2,9 @@ class Triangle
 
   attr_accessor
 
-  def 
+  def initialize()
     
-    
+
   end
 
 end
